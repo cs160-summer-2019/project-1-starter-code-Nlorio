@@ -2,19 +2,165 @@
 
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Forecast</title>
-	
-	<link rel="stylesheet" type="text/css" href="{% static 'weather/vendors/bootstrap/css/bootstrap.css' %}" />
-	<link rel="stylesheet" type="text/css" href="{% static 'weather/css/style.css' %}" />
+  <title>Day Forecast</title>
+
+  <link rel="stylesheet" type="text/css" href="{% static 'weather/vendors/bootstrap/css/bootstrap.css' %}" />
+  <link rel="stylesheet" type="text/css" href="{% static 'weather/css/style.css' %}" />
 
 </head>
+
 <body>
-	<!-- your single-location forecast interface here -->
+  <div class="container">    
+    <div class="jumbotron row text-light bg-primary">
+      <h1 class=centered>Tahoe Day</h1>
+      <div class="btn-group-vertical">
+        <a href="/weather/forecast/alert/" class="btn btn-primary btn-md" role="button" aria-pressed="true">Forecast Alert</a>
+        <a href="/weather/comparison/alert/" class="btn btn-primary btn-md " role="button" aria-pressed="true">Trip Alert</a>
+        <a href="/weather/" class="btn btn-primary btn-md" role="button" aria-pressed="true">Home</a>
+
+      </div>
+
+    </div>
+    
+    <table class="table table-hover" >
+      <thead>
+        <tr>
+          <th scope="col">Time</th>
+          <th scope="col">Wind Condition</th>
+          <th scope="col">Weather Condition</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1 am</th>
+          <td>15 Knots, NW</td>
+          <td>65 F, Cloudy</td>
+        </tr>
+        <tr>
+          <th scope="row">2 am</th>
+          <td>16 Knots, N </td>
+          <td>60 F, Cloudy</td>
+        </tr>
+        <tr>
+          <th scope="row">3 am</th>
+          <td>20 Knots, N </td>
+          <td>65 F, Cloudy</td>
+        </tr>
+        <tr>
+          <th scope="row">4 am</th>
+          <td>19 Knots, NW</td>
+          <td>70 F, Partly Cloudy</td>
+        </tr>
+        <tr>
+          <th scope="row">5 am</th>
+          <td>18 Knots, NW </td>
+          <td>72 F, Partly Cloudy</td>
+        </tr>
+        <tr>
+          <th scope="row">6 am</th>
+          <td>12 Knots, NW </td>
+          <td>75 F, Sunny</td>
+        </tr>
+         <tr>
+          <th scope="row">7 am</th>
+          <td>20 Knots, W </td>
+          <td>75 F, Cloudy</td>
+        </tr>
+        <tr>
+          <th scope="row">8 am</th>
+          <td>19 Knots, NW</td>
+          <td>88 F, Partly Cloudy</td>
+        </tr>
+        <tr>
+          <th scope="row">9 am</th>
+          <td>18 Knots, W </td>
+          <td>88 F, Sunny</td>
+        </tr>
+        <tr>
+          <th scope="row">10 am</th>
+          <td>12 Knots, W </td>
+          <td>88 F, Sunny</td>
+        </tr>
+        <tr>
+          <th scope="row">11 am</th>
+          <td>15 Knots, NW</td>
+          <td>88 F, Cloudy</td>
+        </tr>
+        <tr>
+          <th scope="row">12 am</th>
+          <td>16 Knots, NW </td>
+          <td>88 F, Cloudy</td>
+        </tr>
+        <tr>
+          <th scope="row">1 pm</th>
+          <td>20 Knots, W </td>
+          <td>88 F, Cloudy</td>
+        </tr>
+        <tr>
+          <th scope="row">2 pm</th>
+          <td>19 Knots, SW</td>
+          <td>88 F, Partly Cloudy</td>
+        </tr>
+        <tr>
+          <th scope="row">3 pm</th>
+          <td>18 Knots, SW</td>
+          <td>88 F, Sunny</td>
+        </tr>
+        <tr>
+          <th scope="row">4 pm</th>
+          <td>12 Knots, SW </td>
+          <td>88 F, Sunny</td>
+        </tr>
+         <tr>
+          <th scope="row">5 pm</th>
+          <td>20 Knots </td>
+          <td>88 F, Cloudy</td>
+        </tr>
+        <tr>
+          <th scope="row">6 pm</th>
+          <td>19 Knots, NW</td>
+          <td>88 F, Partly Cloudy</td>
+        </tr>
+        <tr>
+          <th scope="row">7 pm</th>
+          <td>18 Knots, W </td>
+          <td>80 F, Sunny</td>
+        </tr>
+        <tr>
+          <th scope="row">8 pm</th>
+          <td>12 Knots, W </td>
+          <td>78 F, Sunny</td>
+        </tr>
+         <tr>
+          <th scope="row">9 pm</th>
+          <td>20 Knots, W </td>
+          <td>88 F, Cloudy</td>
+        </tr>
+        <tr>
+          <th scope="row">10 pm</th>
+          <td>19 Knots, NW</td>
+          <td>88 F, Partly Cloudy</td>
+        </tr>
+        <tr>
+          <th scope="row">11 pm</th>
+          <td>18 Knots, NW </td>
+          <td>88 F, Sunny</td>
+        </tr>
+        <tr>
+          <th scope="row">12 pm</th>
+          <td>12 Knots, W </td>
+          <td>88 F, Sunny</td>
+        </tr>
+        
+      </tbody>
+    </table>
+
+
+
+  </div>
+  <!-- your single-location forecast interface here -->
 </body>
+
 </html>
-
-
-
-
-

@@ -2,19 +2,37 @@
 
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Forecast - Alert!</title>
-	
-	<link rel="stylesheet" type="text/css" href="{% static 'weather/vendors/bootstrap/css/bootstrap.css' %}" />
-	<link rel="stylesheet" type="text/css" href="{% static 'weather/css/style.css' %}" />
+  <title>Forecast - Alert!</title>
+
+  <link rel="stylesheet" type="text/css" href="{% static 'weather/vendors/bootstrap/css/bootstrap.css' %}" />
+  <link rel="stylesheet" type="text/css" href="{% static 'weather/css/style.css' %}" />
 
 </head>
+
 <body>
-	<!-- your single-location forecast with alert interface here -->
+  <div class="container">
+    <div class="jumbotron row text-light bg-primary">
+      <h1 class=centered>Forecast Alert (Today)</h1>
+      <div class="btn-group-vertical">
+        <a href="/weather/comparison/alert/" class="btn btn-primary btn-md " role="button" aria-pressed="true">Trip Alert</a>
+        <a href="/weather/" class="btn btn-primary btn-md" role="button" aria-pressed="true">Home</a>
+
+      </div>
+
+    </div>
+
+
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item list-group-item-warning">Tahoe - Wind Warning - 2pm 30 Knots</li>
+      <li class="list-group-item list-group-item-danger">Tahoe - Wind Alert - 4pm 60 Knots</li>
+      <li class="list-group-item list-group-item-danger">Berkeley - Heat Alert - 1pm 100 F</li>
+      <li class="list-group-item list-group-item-warning">Berkeley - Heat Warning - 12pm 90 F</li>
+      <li class="list-group-item list-group-item-danger">Berkeley - Heat Alert - 4pm 120 F</li>
+      <li class="list-group-item">...</li>
+    </ul>
+
 </body>
+
 </html>
-
-
-
-
-

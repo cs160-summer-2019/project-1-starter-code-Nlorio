@@ -2,14 +2,78 @@
 
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Comparison</title>
-	
-	<link rel="stylesheet" type="text/css" href="{% static 'weather/vendors/bootstrap/css/bootstrap.css' %}" />
-	<link rel="stylesheet" type="text/css" href="{% static 'weather/css/style.css' %}" />
+  <title>Day Forecast</title>
+
+  <link rel="stylesheet" type="text/css" href="{% static 'weather/vendors/bootstrap/css/bootstrap.css' %}" />
+  <link rel="stylesheet" type="text/css" href="{% static 'weather/css/style.css' %}" />
 
 </head>
+
 <body>
-	<!-- your comparison interface here -->
+  <!-- your comparison interface here -->
+  <div class="container">
+    <div class="jumbotron row text-light bg-primary">
+      <h1 class=centered>Tahoe Plan</h1>
+      <div class="btn-group-vertical">
+        <a href="/weather/forecast/alert/" class="btn btn-primary btn-md" role="button" aria-pressed="true">Forecast Alert</a>
+        <a href="/weather/comparison/alert/" class="btn btn-primary btn-md " role="button" aria-pressed="true">Trip Alert</a>
+        <a href="/weather/" class="btn btn-primary btn-md" role="button" aria-pressed="true">Home</a>
+
+      </div>
+
+    </div>
+
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th scope="col">Date</th>
+          <th scope="col">Condition</th>
+          <th scope="col">Flagged</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr id="highlight">
+          <th scope="row">June 29th</th>
+          <td>Good</td>
+          <td>Not Flagged</td>
+        </tr>
+        <tr>
+          <th scope="row">June 30th</th>
+          <td>Great</td>
+          <td>      <img src="/static/weather/images/flag.png" width=25 height=30></td>
+        </tr>
+        <tr>
+          <th scope="row">July 1st</th>
+          <td>Bad</td>
+          <td>Not Flagged</td>
+        </tr>
+        <tr>
+          <th scope="row">July 2nd</th>
+          <td>Great</td>
+          <td><img src="/static/weather/images/flag.png" width=25 height=30></td>
+        </tr>
+        <tr>
+          <th scope="row">July 2nd</th>
+          <td>Good</td>
+          <td><img src="/static/weather/images/flag.png" width=25 height=30></td>
+        </tr>
+        <tr>
+          <th scope="row">July 2nd</th>
+          <td>Dangerous</td>
+          <td>Not Flagged</td>
+        </tr>
+        <tr>
+          <th scope="row">July 2nd</th>
+          <td>Moderate</td>
+          <td>Not Flagged</td>
+        </tr>
+
+ 
+
+
+
 </body>
+
 </html>

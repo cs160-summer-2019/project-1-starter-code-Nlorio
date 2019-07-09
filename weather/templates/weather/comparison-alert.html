@@ -2,14 +2,37 @@
 
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Comparison - Alert!</title>
-	
-	<link rel="stylesheet" type="text/css" href="{% static 'weather/vendors/bootstrap/css/bootstrap.css' %}" />
-	<link rel="stylesheet" type="text/css" href="{% static 'weather/css/style.css' %}" />
+  <title>Trip - Alert!</title>
+
+  <link rel="stylesheet" type="text/css" href="{% static 'weather/vendors/bootstrap/css/bootstrap.css' %}" />
+  <link rel="stylesheet" type="text/css" href="{% static 'weather/css/style.css' %}" />
 
 </head>
+
 <body>
-	<!-- your comparison interface with alert here -->
+  <div class="container">
+    <div class="jumbotron row text-light bg-primary">
+      <h1 class=centered>Trip Alert</h1>
+      <div class="btn-group-vertical">
+        <a href="/weather/forecast/alert/" class="btn btn-primary btn-md" role="button" aria-pressed="true">Forecast Alert</a>
+        <a href="/weather/" class="btn btn-primary btn-md" role="button" aria-pressed="true">Home</a>
+
+      </div>
+
+    </div>
+
+      <img src="/static/weather/images/flag.png" width=50 height=60>
+
+    <ul class="list-group list-group-flush">
+            <li class="list-group-item list-group-item-primary">June 30th Flagged Day Approaching</li>
+            <li class="list-group-item list-group-item-danger">July 2nd - STORM - Revise Trip Plan Recommended</li>
+      <li class="list-group-item list-group-item-info">July 3rd - Change in Conditions</li>
+      <li class="list-group-item list-group-item-primary">July 5th Flagged Day Approaching</li>
+      <li class="list-group-item">...</li>
+    </ul>
+
 </body>
+
 </html>

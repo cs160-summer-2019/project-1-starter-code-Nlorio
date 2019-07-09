@@ -2,33 +2,84 @@
 
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Current Weather</title>
-	
-	<link rel="stylesheet" type="text/css" href="{% static 'weather/vendors/bootstrap/css/bootstrap.css' %}" />
-	<link rel="stylesheet" type="text/css" href="{% static 'weather/css/style.css' %}" />
+  <title>Location Selection</title>
+
+  <link rel="stylesheet" type="text/css" href="{% static 'weather/vendors/bootstrap/css/bootstrap.css' %}" />
+  <link rel="stylesheet" type="text/css" href="{% static 'weather/css/style.css' %}" />
 
 </head>
+
 <body>
 
-	<!-- replace this html -->
-	<div class="container">
-		<div class="jumbotron text-light bg-primary">
-			<h1>Congratulations</h1>
-			<p>You've set your environment up correctly!</p>
-		</div>
+  <!-- replace this html -->
+  <div class="container">
+    <div class="jumbotron row text-light bg-primary">
+      <h1>Weather, Wind, and Wonder</h1>
+      <h2 class=centered>Monday 1:32 pm</h2>
+    </div>
+    <div class="jumbotron bg-primary" class="location_banner" style="color: white">
+      <h1>Berkeley</h1>
+      <h2>88 F, 6 Knots, NW</h2>
+      <button type="button" class="btn btn-dark">Select</button>
+      <img src="/static/weather/images/sun.png" width=200 height=200>
 
+
+    </div>
+    <div class="jumbotron bg-primary" class="location_banner" style="color: white">
+      <h1>Tahoe</h1>
+      <h2>90 F, 15 Knots, SE</h2>
+      <button type="button" class="btn btn-dark">Select</button>
+      <img src="/static/weather/images/cloud.png" width=300 height=200>
+
+    </div>
+
+    <div style="text-align:center;">
+      <button type="button" class="btn btn-dark btn-lg">Add Location </button>
+
+
+      <br>
+      <br>
+      <br>
+      <br>
+
+
+      <div class="btn-group" role="group" aria-label="Basic example">
+        <a href="/weather/forecast/" class="btn btn-primary btn-lg " role="button" aria-pressed="true">Day Forecast</a>
+        <a href="/weather/comparison/" class="btn btn-primary btn-lg " role="button" aria-pressed="true">Plan it Out</a>
+
+      </div>
+      <br>
+      <br>
+      <div class="btn-group" role="group" aria-label="Basic example">
+
+        <a href="/weather/forecast/alert/" class="btn btn-danger btn-lg" role="button" aria-pressed="true">Forecast Alert</a>
+        <a href="/weather/comparison/alert/" class="btn btn-danger btn-lg " role="button" aria-pressed="true">Trip Alert</a>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+
+
+
+
+
+
+    <!---
 		<a href="/weather/forecast/" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Forecast</a>
 		<a href="/weather/forecast/alert/" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Forecast with alert</a>
 		<a href="/weather/comparison/" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Comparison</a>
 		<a href="/weather/comparison/alert/" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Comparison with alert</a>
 	</div>
-	
-	<!-- /replace this html -->
+  --->
+
+    <!-- /replace this html -->
 </body>
+
 </html>
-
-
-
-
-
